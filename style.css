@@ -1,0 +1,60 @@
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+*{
+  text-align: center;
+}
+body{
+  display: flex;
+  justify-content: center;
+}
+table{
+  border-spacing: 5px;
+}
+tr:nth-child(odd){
+  background: #CCC
+}
+tr:nth-child(even){
+  background: #FFF
+}
+th{
+  background-color: pink;
+}
+tr[data-gender="f"]{
+  color: purple;
+}
+tr[data-gender="m"]{
+  color: green;
+}
+html, body {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+tbody > *:nth-child(odd) {
+  background-color: lightgrey;
+}
+
+tbody > *:nth-child(odd) > * {
+  border-bottom: 1px solid black;
+}
+
+tbody > *:nth-child(even) {
+  background-color: gray;
+}
+
+tbody > *:nth-child(even) > * {
+  border-bottom: 1px solid red;
+}
